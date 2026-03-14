@@ -1,4 +1,4 @@
-package com.viswa.strategypattern.withoutstrategypattern;
+package com.viswa.patterns.behavioralpatterns.strategypattern.withoutstrategypattern;
 
 public class SportsVehicle extends Vehicle {
     public void drive() {
