@@ -1,4 +1,4 @@
-package com.viswa.strategypattern.withstrategypattern;
+package com.viswa.patterns.behavioralpatterns.strategypattern.withstrategypattern;
 
 public class Main {
     public static void main(String[] args) {
