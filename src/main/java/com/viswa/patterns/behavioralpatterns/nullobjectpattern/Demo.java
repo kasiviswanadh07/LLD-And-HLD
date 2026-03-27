@@ -1,4 +1,4 @@
-package com.viswa.patterns.nullobjectpattern;
+package com.viswa.patterns.behavioralpatterns.nullobjectpattern;
 
 public class Demo {
     public static void main(String[] args) {
@@ -8,8 +8,6 @@ public class Demo {
         Vehicle vehicles = VehicleFactory.getVehicle("");
         testDrive(vehicles);
         printVehicleDetails(vehicles);
-
-
     }
 
     private static void printVehicleDetails(Vehicle vehicle) {

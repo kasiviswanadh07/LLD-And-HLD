@@ -1,4 +1,4 @@
-package com.viswa.patterns.nullobjectpattern;
+package com.viswa.patterns.behavioralpatterns.nullobjectpattern;
 
 public class NullVehicle implements Vehicle {
     private final String model;

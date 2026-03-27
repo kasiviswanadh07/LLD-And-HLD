@@ -1,13 +1,13 @@
-package com.viswa.patterns.nullobjectpattern;
+package com.viswa.patterns.behavioralpatterns.nullobjectpattern;
 
-public class Car implements Vehicle {
+public class Bike implements Vehicle {
     private String model;
     private String color;
     private int seatingCapacity;
     private int fuelTankCapacity;
     private boolean isAvailableForTestDrive;
 
-    public Car(String model, String color, int seatingCapacity, int fuelTankCapacity, boolean isAvailableForTestDrive) {
+    public Bike(String model, String color, int seatingCapacity, int fuelTankCapacity, boolean isAvailableForTestDrive) {
         this.model = model;
         this.color = color;
         this.seatingCapacity = seatingCapacity;
@@ -15,33 +15,33 @@ public class Car implements Vehicle {
         this.isAvailableForTestDrive = isAvailableForTestDrive;
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public int getSeatingCapacity() {
-        return seatingCapacity;
+    public boolean isAvailableForTestDrive() {
+        return isAvailableForTestDrive;
     }
 
     public int getFuelTankCapacity() {
         return fuelTankCapacity;
     }
 
-    public boolean isAvailableForTestDrive() {
-        return isAvailableForTestDrive;
+    public int getSeatingCapacity() {
+        return seatingCapacity;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getModel() {
+        return model;
     }
 
     @Override
     public void start() {
-        System.out.println("Car started");
+        System.out.println("Bike started");
     }
 
     @Override
     public void stop() {
-        System.out.println("car stoped");
+        System.out.println("Bike stoped");
     }
 }
