@@ -1,4 +1,7 @@
-package com.viswa.patterns.behavioralpatterns;
+package com.viswa.patterns.behavioralpatterns.iterator;
 
-public class Aggregate {
+import java.util.Iterator;
+
+public interface Aggregate {
+    Iterator createIterator();
 }
