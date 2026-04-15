@@ -15,7 +15,6 @@ public class HotelVisitorDemo {
         for (IRoom room : rooms) {
             room.accept(housekeeping);
         }
-
         System.out.println("\n==> Room Service");
         IRoomVisitor roomService = new
                 RoomServiceVisitor("Breakfast");

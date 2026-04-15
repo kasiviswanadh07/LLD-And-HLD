@@ -1,0 +1,39 @@
+package com.viswa.patterns.behavioralpatterns.memento;
+
+public class MementoDemo {
+    public static void main(String[] args) {
+        ApplicationConfiguration appConfig = new
+                ApplicationConfiguration(
+                "Light", 12, true, "English"
+        );
+        ConfigurationManager configurationManager = new
+                ConfigurationManager();
+
+        // Default State
+        System.out.println("\n===> State 1: ");
+        configurationManager.saveState(appConfig);
+// State 2
+        appConfig.setTheme("Dark");
+        appConfig.setFontSize(14);
+        System.out.println("\n===> State 2: ");
+        configurationManager.saveState(appConfig);// Creates a memento and stores it in history
+
+        appConfig.setTheme("Midnight Blue");
+        appConfig.setFontSize(16);
+        appConfig.setLanguage("Spanish");
+        System.out.println("\n===> State 3: ");
+        configurationManager.saveState(appConfig); // Creates a memento and stores it in history
+
+        // Undo 1
+        System.out.println("\n===> Undo 1 ");
+        configurationManager.undo(appConfig); // Restores the application configuration to the previous saved state
+
+        // Undo 2
+        System.out.println("\n===> Undo 2: ");
+        configurationManager.undo(appConfig); // Restores the application configuration to the previous saved state
+
+        // Undo 3: Try to undo when no history
+        System.out.println("\n===> Undo 3: ");
+        configurationManager.undo(appConfig);
+    }
+}
