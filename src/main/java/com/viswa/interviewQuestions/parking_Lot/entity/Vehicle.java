@@ -5,10 +5,9 @@ import com.viswa.interviewQuestions.parking_Lot.enums.VehicleType;
 public class Vehicle {
     private final String vehicleNumber;
     private VehicleType vehicleType;
-//    private Ticket ticket;
 
 
-    public Vehicle(VehicleType vehicleType, String vehicleNumber) {
+    public Vehicle( String vehicleNumber,VehicleType vehicleType) {
         this.vehicleType = vehicleType;
         this.vehicleNumber = vehicleNumber;
     }
@@ -17,7 +16,8 @@ public class Vehicle {
         return vehicleType;
     }
 
-//    public void assignTicket() {
-//        this.ticket = ticket;
-//    }
+
+    public String getVehicleNumber() {
+        return vehicleNumber;
+    }
 }
