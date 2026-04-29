@@ -49,8 +49,7 @@ public class ParkingLotClient {
                 2, levelTwoManagers
         );
 
-        ParkingBuilding parkingBuilding =
-                new ParkingBuilding(
+        ParkingBuilding parkingBuilding =                new ParkingBuilding(
                         List.of(level1, level2),
                         new CostComputation(new FixedPricingStrategy())
                 );
